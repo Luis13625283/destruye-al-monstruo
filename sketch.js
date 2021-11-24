@@ -52,10 +52,6 @@ function setup() {
   box23 = new Box(700, 100, 70, 70);
   box24 = new Box(700, 100, 70, 70);
 
-  box25 = new Box(950, 100, 70, 70);
-  box26 = new Box(950, 100, 70, 70);
-  box27 = new Box(950, 100, 70, 70);
-
 }
 
 function draw() {
@@ -92,10 +88,6 @@ function draw() {
   box23.display();
   box24.display();
 
-  box25.display();
-  box26.display();
-  box27.display();
-
   hero.display();
   rope.display();
   monster.display();
@@ -103,5 +95,5 @@ function draw() {
 }
 
 function mouseDragged(){
-  Matter.Body.setPosition(hero,body, {x: mouseX, y: mouseY});
+  Matter.Body.setPosition(hero.body, {x: mouseX, y: mouseY});
 }
